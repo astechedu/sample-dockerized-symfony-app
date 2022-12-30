@@ -40,7 +40,9 @@ services:
     
     dockerfile: Dockerfile
     
+    
    container_name: symfony01
+   
    
    volumes: 
    
