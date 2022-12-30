@@ -27,7 +27,7 @@ Dockerfile:
 
 #docker-compose.yml
 
-
+<code>
 version: "3"
 
 services: 
@@ -51,7 +51,7 @@ services:
    ports:
    
     - 8080:80
-
+</code>
 
 
 ------ X ------
