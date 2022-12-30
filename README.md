@@ -19,8 +19,6 @@ Dockerfile:
 </code>
 
 
------ X -----
-
 #docker-compose.yml
 
 <code>
@@ -37,8 +35,6 @@ services:
     - 8080:80
 </code>
 
-
------- X ------
 
 
 
