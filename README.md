@@ -9,3 +9,7 @@ This is sample dockerized symfony app.
 #Running container
 
 	docker run --name sysmfony6-app -p 8080:80 -d dockerized_symfony6
+
+#On Browser
+
+	http://localhost:8080
