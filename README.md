@@ -23,10 +23,26 @@ Dockerfile:
 
 
 
-
 ----- X -----
 
+#docker-compose.yml
 
+
+version: "3"
+services: 
+  web:
+   build: 
+    context: ./
+    dockerfile: Dockerfile
+   container_name: symfony01
+   volumes: 
+     - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+   ports: 
+    - 8080:80
+
+
+
+------ X ------
 
 
 
