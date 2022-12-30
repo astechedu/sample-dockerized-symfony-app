@@ -5,7 +5,7 @@ This is sample dockerized symfony app.
 
 Dockerfile: 
 
-
+<code>
  FROM php:8.1-apache
 
   RUN apt update && apt install -y \
@@ -14,13 +14,12 @@ Dockerfile:
       zip \
       unzip
 
- #RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer 
-   
+ #RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer    
 
   WORKDIR /var/www/html  
   COPY . .
   RUN chown -R www-data:www-data /var/www
-
+</code>
 
 
 ----- X -----
