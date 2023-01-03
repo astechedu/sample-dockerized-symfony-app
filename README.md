@@ -14,7 +14,7 @@ Dockerfile:
       unzip
  #RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer  
   WORKDIR /var/www/html  
-  COPY symfony6x ./symfony6x
+  COPY symf6xproject ./symf6xproject
   RUN chown -R www-data:www-data /var/www
 </code>
 
@@ -44,7 +44,7 @@ services:
       
        <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
-	DocumentRoot /var/www/html/public
+	DocumentRoot /var/www/html/symf6xproject/public
 
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
