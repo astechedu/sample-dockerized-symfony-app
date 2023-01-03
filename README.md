@@ -38,6 +38,23 @@ services:
 
 :thumbsup:
 
+000-default.conf
+
+<code>
+<VirtualHost *:80>
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html/public
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+</VirtualHost>
+
+#vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+</code>
+
+:thumbsup:
 
 
 #Building image
@@ -51,3 +68,7 @@ services:
 #On Browser
 
 	http://localhost:8080
+
+
+
+
