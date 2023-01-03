@@ -40,7 +40,8 @@ services:
 
 000-default.conf
 
-<code>       
+<code>
+      
        <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 	DocumentRoot /var/www/html/public
