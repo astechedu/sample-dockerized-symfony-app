@@ -1,6 +1,6 @@
  FROM php:8.1-apache
 
-  RUN apt update && apt install -y \
+  RUN apt-get update && apt-get install -y \
       git \
       curl \
       zip \
@@ -10,5 +10,5 @@
    
 
   WORKDIR /var/www/html
-  COPY . .
+  COPY symf6x ./symf6x
   RUN chown -R www-data:www-data /var/www
