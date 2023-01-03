@@ -10,5 +10,5 @@
    
 
   WORKDIR /var/www/html
-  COPY symf6x ./symf6x
+  COPY symf6xproject ./symf6xproject
   RUN chown -R www-data:www-data /var/www
