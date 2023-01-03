@@ -7,14 +7,14 @@ Dockerfile:
 
 <code>
  FROM php:8.1-apache
-  RUN apt update && apt install -y \
+  RUN apt-get update && apt-get install -y \
       git \
       curl \
       zip \
       unzip
  #RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer  
   WORKDIR /var/www/html  
-  COPY . .
+  COPY symfony6x ./symfony6x
   RUN chown -R www-data:www-data /var/www
 </code>
 
@@ -29,7 +29,7 @@ services:
    build:    
     context: ./    
     dockerfile: Dockerfile       
-   container_name: symfony01   
+   container_name: symfony6x   
    volumes:    
      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf     
    ports:   
